@@ -3,30 +3,32 @@
         <title>hamburger!</title>
     </head>
     <body>
-        <h1>Which is your favorite food chain?</h1>
+        <h1>What food chain are you?</h1>
         <h2>What type of food is your favorite?</h2>
-        <form>
-        <input type=radio name="type" value="Traditional american">Traditional american<br>
-        <input type=radio name="type" value="Fried">Fried<br>
-        <input type=radio name="type" value="Mexican">Mexican<br>
+        <form action="/hamburger" method="POST">
+        <input type=radio name="style1" value="Traditional american">Traditional american<br>
+        <input type=radio name="style1" value="Fried">Fried<br>
+        <input type=radio name="style1" value="Mexican">Mexican<br>
         <h2>Which type of meat is your favorite?</h2>
-        <input type=radio name="meat" value="Beef">Dribble past the goalie<br>
-        <input type=radio name="meat" value="Chicken">Pass it into the goal<br>
-        <input type=radio name="meat" value="Don't care as long as it's in a taco">Header<br>
+        <input type=radio name="meat" value="Beef">Beef<br>
+        <input type=radio name="meat" value="Chicken">Chicken<br>
+        <input type=radio name="meat" value="Don't care as long as it's in a taco">Don't care as long as it's in a taco<br>
         <h2>Whats your favorite color?</h2>
         <input type=radio name="color" value="Yellow">Yellow<br>
         <input type=radio name="color" value="Red">Red<br>
         <input type=radio name="color" value="Purple">Purple<br>
-        <h2></h2>
-        <input type=radio name="goal" value="Dribble past the goalie">Dribble past the goalie<br>
-        <input type=radio name="goal" value="Pass it into the goal">Pass it into the goal<br>
-        <input type=radio name="goal" value="Header">Header<br>
-        <h2></h2>
-        <input type=radio name="goal" value="Dribble past the goalie">Dribble past the goalie<br>
-        <input type=radio name="goal" value="Pass it into the goal">Pass it into the goal<br>
-        <input type=radio name="goal" value="Header">Header<br>
-        
+        <h2>When are you going to eat the food?</h2>
+        <input type=radio name="when1" value="On a road trip">On a road trip<br>
+        <input type=radio name="when1" value="Coming home">Coming home<br>
+        <input type=radio name="when1" value="Whenever">Whenever<br>
+        <h2>What age are you when you eat fast food?</h2>
+        <input type=radio name="age" value="4-10">4-10<br>
+        <input type=radio name="age" value="12-16">12-16<br>
+        <input type=radio name="age" value="1-99">1-99<br>
             <input type="submit" value="Submit"/>
         </form>
+         {% if hamburger %} 
+        <p>{{hamburger}}</p> 
+        {% endif %}
     </body>
 </html>
