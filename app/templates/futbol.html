@@ -5,27 +5,30 @@
     <body>
         <h1>What soccer player are you?</h1>
         <h2>What is your favorite position?</h2>
-        <form>
-        <input type=radio name="position" value="striker">Striker<br>
-        <input type=radio name="position" value="centermid">Centermid<br>
-        <input type=radio name="position" value="centerback">Centerback<br>
+        <form action="/futbol" method="POST">
+        <input type=radio name="position" value="Striker">Striker<br>
+        <input type=radio name="position" value="Centermid">Centermid<br>
+        <input type=radio name="position" value="Centerback">Centerback<br>
         <h2>What is your favorite way to score a goal?</h2>
-        <input type=radio name="goal" value="dribble past the goalie">Dribble past the goalie<br>
-        <input type=radio name="goal" value="pass it into the goal">Pass it into the goal<br>
-        <input type=radio name="goal" value="header">Header<br>
+        <input type=radio name="goal" value="Dribble past the goalie">Dribble past the goalie<br>
+        <input type=radio name="goal" value="Pass the ball into the goal">Pass the ball into the goal<br>
+        <input type=radio name="goal" value="Header">Header<br>
         <h2>What is your mindset during a game?</h2>
-        <input type=radio name="mindset" value="be the difference">Be the difference<br>
-        <input type=radio name="mindset" value="help the game flow">Help the game flow<br>
-        <input type=radio name="mindset" value="defense">Defense<br>
+        <input type=radio name="mindset" value="Be the difference">Be the difference<br>
+        <input type=radio name="mindset" value="Help the game flow">Help the game flow<br>
+        <input type=radio name="mindset" value="Defense">Defense<br>
         <h2>Which team do you hate the least?</h2>
         <input type=radio name="team" value="Barcelona">Barcelona<br>
         <input type=radio name="team" value="Madrid">Madrid<br>
         <input type=radio name="team" value="Liverpool">Liverpool<br>
-        <h2>best physical attribute?</h2>
-        <input type=radio name="best" value="quick as lightning">Quick as lightning<br>
-        <input type=radio name="best" value="run for ages">Run for ages<br>
-        <input type=radio name="best" value="human tank">Human tank<br>
+        <h2>Which is your best physical attribute?</h2>
+        <input type=radio name="best" value="Quick as lightning">Quick as lightning<br>
+        <input type=radio name="best" value="Run for miles">Run for ages<br>
+        <input type=radio name="best" value="Human tank">Human tank<br>
             <input type="submit" value="Submit"/>
         </form>
+        {% if futbol %} 
+        <p>{{futbol}}</p> 
+        {% endif %}
     </body>
 </html>
