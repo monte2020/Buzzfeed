@@ -6,9 +6,6 @@ from app.models import model, formopener
 @app.route('/index')
 def index():
     return render_template("home.html")
-@app.route("/music")
-def music():
-    return render_template("music.html")
 @app.route("/futbol", methods=["GET", "POST"])
 def futbol():
     if request.method == "GET":
@@ -38,3 +35,18 @@ def hamburger():
         print(userdata1)
         hamburger = str(model.chain_quiz(style1, meat, color, when1, age))
         return render_template("/hamburger.html", hamburger = hamburger)
+@app.route("/music", methods=["GET", "POST"])
+def music():
+    if request.method == "GET":
+        return render_template("/music.html")
+    else:
+        userdata2 = formopener.dict_from(request.form)
+        print(request.form)
+        print(userdata2)
+        style = userdata2["style"].decode('utf-8')
+        why = userdata2["why"].decode('utf-8')
+        feel = userdata2["feel"].decode('utf-8')
+        where = userdata2["where"].decode('utf-8')
+        artist = userdata2["artist"].decode('utf-8')
+        music = str(model.genre_quiz(style, why, feel, where, artist))
+        return render_template("/music.html", music = music)

@@ -94,6 +94,51 @@ def chain_quiz(type1, meat, color, when1, age):
         return "You are Taco Bell"
 
 
-
+def genre_quiz(style, why, feel, where, artist):
+    jazz_score=0
+    rock_score=0
+    pop_score=0
+    if style == "Make your own style":
+        jazz_score += 1
+    elif style == "Identify with past generations":
+        rock_score += 1
+    elif style == "Conform with the masses":
+        pop_score += 1
+    elif why == "Appreciating background music":
+        jazz_score += 1
+    elif why == "For a good suggestion in a family parties":
+        rock_score += 1
+    elif why == "Just listening to the radio":
+        pop_score += 1
+    elif feel == "Inspired":
+        jazz_score += 1
+    elif feel == "Nostalgic":
+        rock_score += 1
+    elif feel == "Depends on my mood":
+        pop_score += 1 
+    elif where == "Anywhere with some company":
+        jazz_score += 1
+    elif where == "Road trip":
+        rock_score += 1
+    elif where == "In my room":
+        pop_score += 1
+    elif artist == "Louis Daniel Armstrong":
+        jazz_score += 1
+    elif artist == "The Beatles":
+        rock_score += 1
+    elif artist == "Billie Eillish":
+        pop_score += 1
+    if jazz_score > rock_score and jazz_score > pop_score:
+        return "You are jazz"
+    elif rock_score > jazz_score and rock_score > pop_score:
+        return "You are rock"
+    elif pop_score > jazz_score and pop_score > rock_score:
+        return "You are pop music"
+    elif jazz_score == rock_score:
+        return "You are jazz"
+    elif rock_score == pop_score:
+        return "You are rock"
+    elif jazz_score == pop_score:
+        return "You are pop music"
 
 

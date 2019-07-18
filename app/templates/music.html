@@ -5,10 +5,10 @@
     <body>
         <h1>What music genre are you?</h1>
         <h2>How do you get your style?</h2>
-        <form>
-        <input type=radio name="style" value="make your own style">Make your own style<br>
-        <input type=radio name="style" value="identify with past generations">Identify with past generations<br>
-        <input type=radio name="style" value="conform with the masses">Conform with the masses<br>
+        <form action="/music" method="POST">
+        <input type=radio name="style" value="Make your own style">Make your own style<br>
+        <input type=radio name="style" value="Identify with past generations">Identify with past generations<br>
+        <input type=radio name="style" value="Conform with the masses">Conform with the masses<br>
         <h2>Why do you listen to music?</h2>
         <input type=radio name="why" value="Appreciating background music">Appreciating background music<br>
         <input type=radio name="why" value="For good suggestions in family parties">For a good suggestion in a family parties<br>
@@ -27,5 +27,8 @@
         <input type=radio name="artist" value="Billie Eilish">Billie Eillish<br>
         <input type="submit" value="Submit"/>
         </form>
+        {% if music %} 
+        <p>{{music}}</p> 
+        {% endif %}
     </body>
 </html>
