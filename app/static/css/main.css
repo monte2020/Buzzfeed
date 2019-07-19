@@ -55,30 +55,6 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
-homz{ 
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-home {
-  float: left;
-}
-
-home a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-home a:hover {
-  background-color: #111;
-}
-
 mark {
 	background-color: transparent;
 	color: inherit;
