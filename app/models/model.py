@@ -33,17 +33,17 @@ def soccer_quiz(position, goal, mindset, team, best):
     elif best == "Human tank":
         van_score += 1
     if messi_score > modric_score and messi_score > van_score:
-        return "You are Messi"
+        return "You are Messi!"
     elif modric_score > messi_score and modric_score > van_score:
-        return "You are Modric"
+        return "You are Modric!"
     elif van_score > messi_score and van_score > modric_score:
-        return "You are Van Dijk"
+        return "You are Van Dijk!"
     elif messi_score == modric_score:
-        return "You are messi"
+        return "You are messi!"
     elif modric_score == van_score:
-        return "You are Modric"
+        return "You are Modric!"
     elif messi_score == van_score:
-        return "You are Van Dijk"
+        return "You are Van Dijk!"
 
 
 def chain_quiz(type1, meat, color, when1, age):
@@ -81,17 +81,17 @@ def chain_quiz(type1, meat, color, when1, age):
     elif age == "1-99":
         burg_score += 1
     if burg_score > kfc_score and burg_score > taco_score:
-        return "You are Burger King"
+        return "You are Burger King!"
     elif kfc_score > burg_score and kfc_score > taco_score:
-        return "You are KFC"
+        return "You are KFC!"
     elif taco_score > burg_score and taco_score > kfc_score:
-        return "You are Taco Bell"
+        return "You are Taco Bell!"
     elif burg_score == kfc_score:
-        return "You are Burger King"
+        return "You are Burger King!"
     elif kfc_score == taco_score:
-        return "You are KFC"
+        return "You are KFC!"
     elif burg_score == taco_score:
-        return "You are Taco Bell"
+        return "You are Taco Bell!"
 
 
 def genre_quiz(style, why, feel, where, artist):
@@ -129,16 +129,16 @@ def genre_quiz(style, why, feel, where, artist):
     elif artist == "Billie Eillish":
         pop_score += 1
     if jazz_score > rock_score and jazz_score > pop_score:
-        return "You are jazz"
+        return "You are jazz!"
     elif rock_score > jazz_score and rock_score > pop_score:
-        return "You are classic rock"
+        return "You are classic rock!"
     elif pop_score > jazz_score and pop_score > rock_score:
-        return "You are pop music"
+        return "You are pop music!"
     elif jazz_score == rock_score:
-        return "You are jazz"
+        return "You are jazz!"
     elif rock_score == pop_score:
-        return "You are classic rock"
+        return "You are classic rock!"
     elif jazz_score == pop_score:
-        return "You are pop music"
+        return "You are pop music!"
 
 
