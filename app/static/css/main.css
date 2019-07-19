@@ -809,7 +809,7 @@ input, select, textarea {
 		#bg {
 			background-size: 1500px auto;
 			width: 4500px;
-		} }
+		}
 
 /* Normal */
 
@@ -1000,7 +1000,7 @@ input, select, textarea {
 
 			#header nav a:active {
 				font-size: 1em;
-			} }
+			}
 
 /* Mobile (Portrait) */
 
@@ -1082,4 +1082,4 @@ input, select, textarea {
 
 		#header nav {
 			padding: 0 1em;
-		} }
+		} 

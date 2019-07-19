@@ -1,27 +1,59 @@
 <html>
     <head>
         <title>Futbol!</title>
+        <style>
+            body {
+                background-image: url("https://img.freepik.com/free-photo/football-field-soccer-field-background-green-lawn-court-create-game_64749-2034.jpg?size=626&ext=jpg");
+                background-size: 1300px 2000px;
+                background-repeat: no-repeat;
+            }
+            h1 {
+                text-align: center;
+                color: white;
+                font-size: 50px;
+            }
+            p {
+                font-size: 50px;
+                color: gold;
+                text-align: center;
+            }
+            h2{
+                color: rgb(66, 245, 221);
+                padding: 20px;
+                text-align: center;
+                margin: 100px 100px 15px 100px;
+                font-size: 30px;
+            }
+            
+            form {
+                color: black;
+                padding: 1px;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
         <h1>What soccer player are you?</h1>
-        <h2>What is your favorite position?</h2>
+        <h2>What is your favorite position?</h2></div>
         <form action="/futbol" method="POST">
         <input type=radio name="position" value="Striker">Striker<br>
         <input type=radio name="position" value="Centermid">Centermid<br>
         <input type=radio name="position" value="Centerback">Centerback<br>
-        <h2>What is your favorite way to score a goal?</h2>
+        <h2>What is your favorite way to score a goal?</h2></div>
         <input type=radio name="goal" value="Pass the ball into the goal">Pass the ball into the goal<br>
         <input type=radio name="goal" value="Dribble past the goalie">Dribble past the goalie<br>
         <input type=radio name="goal" value="Header">Header<br>
-        <h2>What is your mindset during a game?</h2>
+        <h2>What is your mindset during a game?</h2></div>
         <input type=radio name="mindset" value="Defense">Defense<br>
         <input type=radio name="mindset" value="Be the difference">Be the difference<br>
         <input type=radio name="mindset" value="Help the game flow">Help the game flow<br>
-        <h2>Which team do you hate the least?</h2>
+        <h2>Which team do you hate the least?</h2></div>
         <input type=radio name="team" value="Madrid">Madrid<br>
         <input type=radio name="team" value="Liverpool">Liverpool<br>
         <input type=radio name="team" value="Barcelona">Barcelona<br>
-        <h2>Which is your best physical attribute?</h2>
+        <h2>Which is your best physical attribute?</h2></div>
         <input type=radio name="best" value="Quick as lightning">Quick as lightning<br>
         <input type=radio name="best" value="Human tank">Human tank<br>
         <input type=radio name="best" value="Run for miles">Run for ages<br>

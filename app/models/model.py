@@ -131,13 +131,13 @@ def genre_quiz(style, why, feel, where, artist):
     if jazz_score > rock_score and jazz_score > pop_score:
         return "You are jazz"
     elif rock_score > jazz_score and rock_score > pop_score:
-        return "You are rock"
+        return "You are classic rock"
     elif pop_score > jazz_score and pop_score > rock_score:
         return "You are pop music"
     elif jazz_score == rock_score:
         return "You are jazz"
     elif rock_score == pop_score:
-        return "You are rock"
+        return "You are classic rock"
     elif jazz_score == pop_score:
         return "You are pop music"
 

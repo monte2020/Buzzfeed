@@ -1,10 +1,44 @@
 <html>
     <head>
         <title>hamburger!</title>
+        <style>
+            
+            body {
+                background-image: url("https://i.ytimg.com/vi/Iyt0_2h9Dv8/maxresdefault.jpg");
+                background-repeat: no-repeat;
+                background-size: 1300px 2000px;
+            }
+            
+            h1 {
+                text-align: center;
+                color: blue;
+                font-size: 50px;
+            }
+            p {
+                font-size: 50px;
+                color: red;
+                text-align: center;
+            }
+            h2{
+                color: darkblue;
+                padding: 20px;
+                text-align: center;
+                margin: 100px 100px 15px 100px;
+                font-size: 30px;
+            }
+            
+            form {
+                color: black;
+                padding: 1px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
         <h1>What food chain are you?</h1>
-        <h2>What type of food is your favorite?</h2>
+        <h2>What is your favorite type of food?</h2>
         <form action="/hamburger" method="POST">
         <input type=radio name="style1" value="Fried">Fried<br>
         <input type=radio name="style1" value="Traditional american">Traditional american<br>
@@ -21,7 +55,7 @@
         <input type=radio name="when1" value="On a road trip">On a road trip<br>
         <input type=radio name="when1" value="Coming home">Coming home<br>
         <input type=radio name="when1" value="Whenever">Whenever<br>
-        <h2>What age are you when you eat fast food?</h2>
+        <h2>How old are you when you eat fastfood?</h2>
         <input type=radio name="age" value="4-10">4-10<br>
         <input type=radio name="age" value="12-16">12-16<br>
         <input type=radio name="age" value="1-99">1-99<br>
